@@ -1,4 +1,4 @@
-
+//new commit
 public class IndexOf {
     /**
      * Find the position of a number in an array.
