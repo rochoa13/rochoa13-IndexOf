@@ -1,6 +1,4 @@
 
-//
-
 public class IndexOf {
     /**
      * Find the position of a number in an array.
@@ -11,6 +9,14 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
-        return -1;
+        int indexOfMatch = -1; //default value IF there is no match
+       
+        for(int i = 0; i < arr.length; i++){
+            
+            if(arr[i] ==  n){ // checks if vlaue in array index is a match to n
+                return i; // return index if matched, ends method
+            }
+        }
+        return indexOfMatch; // returns -1 if match is not made in if statement
     }
 }
